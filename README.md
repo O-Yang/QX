@@ -11,10 +11,10 @@ Advertising.list, tag=正常广告拦截
 <p>
 AdRule.list, tag=重度广告拦截（默认不开启）
 
-Hijacking.list, tag=运营商劫持
-Privacy.list, tag=隐私保护
-Advertising.list, tag=正常广告拦截
-👇🏻国内外知名网站规则
+Hijacking.list, tag=运营商劫持<p>
+Privacy.list, tag=隐私保护<p>
+Advertising.list, tag=正常广告拦截<p>
+👇🏻国内外知名网站规则<p>
 Global.list, tag=全球加速,
 Streaming.list, tag=国际媒体, 
 China.list, tag=国内网站, 
