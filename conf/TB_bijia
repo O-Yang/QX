@@ -1,3 +1,8 @@
+hostname = trade-acs.m.taobao.com
+
+
+
+
 # 淘宝比价
 
 ^http://.+/amdc/mobileDispatch url script-request-body https://raw.githubusercontent.com/O-Yang/QX/main/conf/js/tb_pre.js
