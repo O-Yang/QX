@@ -4,7 +4,9 @@ QuantumultX
 
 # 1.远程分流规则订阅
 [filter_remote]
+
 Unbreak.list, tag=规则修正
+
 Advertising.list, tag=正常广告拦截
 AdRule.list, tag=重度广告拦截（默认不开启）
 Hijacking.list, tag=运营商劫持
