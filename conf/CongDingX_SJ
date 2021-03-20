@@ -1,5 +1,6 @@
 hostname = www.google.cn,api.abema.io
 
+#原名：General.conf
 # Redirect Google Search Service
 ^(http|https):\/\/(www.)?(g|google)\.cn url 302 https://www.google.com
 
