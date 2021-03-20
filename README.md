@@ -8,6 +8,7 @@ QuantumultX
 Unbreak.list, tag=规则修正
 
 Advertising.list, tag=正常广告拦截
+<p>
 AdRule.list, tag=重度广告拦截（默认不开启）
 
 Hijacking.list, tag=运营商劫持
