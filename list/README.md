@@ -103,12 +103,6 @@
 >
 
 
-$ git add text/Unbreak.list
-$ git commit -m "text1"
-$ git add text/text2.txt
-$ git commit -m "text2"
-$ git push origin master
-
 
 
 
