@@ -1,6 +1,10 @@
+感谢规则、脚本等提供(不分先后)：
+
+[Erdongchen](https://github.com/erdongchanyo/Rules)、
+
 # QX
 QuantumultX
-自用库，感谢各位大神提供支持，不一一感谢了。
+自用库
 
 # list 远程分流规则订阅</p>
 
