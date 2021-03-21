@@ -76,7 +76,7 @@
 > https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/StreamingSE.list
 >
 
-#### 海外抖音
+#### 👋 海外抖音
 
 > https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Video/TikTok.list
 >
