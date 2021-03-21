@@ -91,19 +91,26 @@
 
 > 
 >
+Spotify（声田）是一个正版流媒体音乐
 
-#### 
+#### a. 分流规则工作原理
 
-> 
+> list 文件内包含若干如下的域名列表：
 >
-
-#### 
-
+> ```
+> # > ABC
+> HOST-SUFFIX,edgedatg.com,GMedia
+> HOST-SUFFIX,go.com,GMedia
 > 
+> # > Abema TV
+> USER-AGENT,AbemaTV*,GMedia
+> HOST-SUFFIX,abema.io,GMedia
+> HOST-SUFFIX,abema.tv,GMedia
+> HOST-SUFFIX,akamaized.net,GMedia
+> HOST-SUFFIX,ameba.jp,GMedia
+> HOST-SUFFIX,hayabusa.io,GMedia
+> ```
 >
-
-
-
 
 
 
