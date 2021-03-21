@@ -101,7 +101,7 @@
 
 ##### 001GuiZhe.list
 > 
-> 出国媒体
+> 规则修正
 > ```
 > Unbreak.list
 > 
