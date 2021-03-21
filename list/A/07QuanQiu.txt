@@ -1,39 +1,6 @@
 # (DNS Cache Pollution)
 
 
-
-
-# ---(Apple)---
-# > Apple URL Shortener
-DOMAIN-SUFFIX,appsto.re,PROXY
-# > iBooks Store download
-DOMAIN,books.itunes.apple.com,PROXY
-# > App Store Preview
-DOMAIN,apps.apple.com,PROXY
-DOMAIN,itunes.apple.com,PROXY
-# > Spotlight
-DOMAIN,api-glb-sea.smoot.apple.com,PROXY
-# > Look Up
-DOMAIN-SUFFIX,smoot.apple.com,PROXY
-DOMAIN,lookup-api.apple.com,PROXY
-# > Apple Music Web
-DOMAIN,beta.music.apple.com,PROXY
-# ------
-# > Apple
-DOMAIN,appleid.apple.com,PROXY
-DOMAIN,developer.apple.com,PROXY
-DOMAIN,www.icloud.com,PROXY
-DOMAIN,ocsp.apple.com,PROXY
-DOMAIN,xp.apple.com,PROXY
-# App Store
-# Store content such as apps, books, and music
-DOMAIN-SUFFIX,apps.apple.com,PROXY
-DOMAIN-SUFFIX,itunes.apple.com,PROXY
-DOMAIN-SUFFIX,itunes-apple.com.akadns.net,PROXY
-DOMAIN-SUFFIX,mzstatic.com,PROXY
-DOMAIN,ppq.apple.com,PROXY
-
-
 # > Amazon
 DOMAIN-SUFFIX,amazon.co.jp,PROXY
 DOMAIN,d3c33hcgiwev3.cloudfront.net,PROXY
