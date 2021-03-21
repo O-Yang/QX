@@ -95,29 +95,73 @@
 ### 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-Spotify（声田）是一个正版流媒体音乐
+
 
 ### 二、个人编辑整理
 
-##### 
-
-> 地址http：、、123456123123123133
->
+##### chuguo.list
+> 出国媒体
+> 👇
+> https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/GMedia.list
 > ```
-> # > ABC
-> HOST-SUFFIX,edgedatg.com,GMedia
-> HOST-SUFFIX,go.com,GMedia
+> 1.Spotify（声田音乐）
+> 2.奥术大师多
+> 3.阿斯达
+> 4.阿斯达啊
+> 5.阿斯达啊
+> 6.阿萨啊的
+> 7.哀悼啊
+> 8.阿萨啊的
 > 
-> # > Abema TV
-> USER-AGENT,AbemaTV*,GMedia
-> HOST-SUFFIX,abema.io,GMedia
-> HOST-SUFFIX,abema.tv,GMedia
-> HOST-SUFFIX,akamaized.net,GMedia
-> HOST-SUFFIX,ameba.jp,GMedia
-> HOST-SUFFIX,hayabusa.io,GMedia
 > ```
->
 
+##### chuguo.list
+> 出国媒体
+> 👇
+> https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/GMedia.list
+> ```
+> 1.Spotify（声田音乐）
+> 2.奥术大师多
+> 3.阿斯达
+> 4.阿斯达啊
+> 5.阿斯达啊
+> 6.阿萨啊的
+> 7.哀悼啊
+> 8.阿萨啊的
+> 
+> ```
+
+##### chuguo.list
+> 出国媒体
+> 👇
+> https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/GMedia.list
+> ```
+> 1.Spotify（声田音乐）
+> 2.奥术大师多
+> 3.阿斯达
+> 4.阿斯达啊
+> 5.阿斯达啊
+> 6.阿萨啊的
+> 7.哀悼啊
+> 8.阿萨啊的
+> 
+> ```
+
+##### chuguo.list
+> 出国媒体
+> 👇
+> https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/GMedia.list
+> ```
+> 1.Spotify（声田音乐）
+> 2.奥术大师多
+> 3.阿斯达
+> 4.阿斯达啊
+> 5.阿斯达啊
+> 6.阿萨啊的
+> 7.哀悼啊
+> 8.阿萨啊的
+> 
+> ```
 
 
 
