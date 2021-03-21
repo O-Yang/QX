@@ -1,4 +1,4 @@
-# Streaming Media//Streaming:HLS是一个由苹果公司提出的基于HTTP的流媒体网络传输协议，可以实现流媒体的直播（live）和点播(vod)。
+# Streaming Media/国际媒体/Streaming:HLS是一个由苹果公司提出的基于HTTP的流媒体网络传输协议，可以实现流媒体的直播（live）和点播(vod)。
 # (Podcast)
 # > Himalaya
 USER-AGENT,Himalaya*,Streaming
