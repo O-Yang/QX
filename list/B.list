@@ -1,3 +1,4 @@
+#重度拦截广告
 # Update > 2021.2.27 This rule is based on optimization by lhie1/Rules.
 DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao-b.com,REJECT
 DOMAIN-SUFFIX,apoll.m.taobao.com,REJECT
