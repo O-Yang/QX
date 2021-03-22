@@ -1,4 +1,16 @@
 # China Area Network
+
+# > Apple
+DOMAIN-SUFFIX,aaplimg.com,DIRECT
+DOMAIN-SUFFIX,apple.co,DIRECT
+DOMAIN-SUFFIX,apple.com,DIRECT
+DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+DOMAIN-SUFFIX,appstore.com,DIRECT
+DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+DOMAIN-SUFFIX,icloud-content.com,DIRECT
+DOMAIN-SUFFIX,me.com,DIRECT
+DOMAIN-SUFFIX,mzstatic.com,DIRECT
+#---------------------
 # > 360
 DOMAIN-SUFFIX,qhres.com,DIRECT
 DOMAIN-SUFFIX,qhimg.com,DIRECT
