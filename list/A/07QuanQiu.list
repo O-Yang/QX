@@ -30,6 +30,9 @@ DOMAIN-SUFFIX,itunes.apple.com,PROXY
 DOMAIN-SUFFIX,itunes-apple.com.akadns.net,PROXY
 DOMAIN-SUFFIX,mzstatic.com,PROXY
 DOMAIN,ppq.apple.com,PROXY
+# > AppleTestFlight 应用程序测试
+DOMAIN,beta.apple.com,PROXY
+DOMAIN,testflight.apple.com,PROXY
 #----------------
 
 # > Amazon
@@ -41,10 +44,7 @@ DOMAIN,s3-ap-southeast-2.amazonaws.com,PROXY
 # > Akamai
 DOMAIN,a248.e.akamai.net,PROXY
 DOMAIN,a771.dscq.akamai.net,PROXY
-# > Apple
-# TestFlight
-DOMAIN,beta.apple.com,PROXY
-DOMAIN,testflight.apple.com,PROXY
+
 
 # > Cryptocurrency
 DOMAIN-SUFFIX,aex.com,PROXY
