@@ -16,7 +16,7 @@ DOMAIN-SUFFIX,smoot.apple.com,PROXY
 DOMAIN,lookup-api.apple.com,PROXY
 # > Apple Music Web 苹果音乐
 DOMAIN,beta.music.apple.com,PROXY
-# > Apple 1.苹果ID 2.开发正账号 3.icloud 4.请求 5.不知道
+# > Apple 1.苹果ID 2.开发者账号 3.icloud 4.请求 5.不知道
 DOMAIN,appleid.apple.com,PROXY
 DOMAIN,developer.apple.com,PROXY
 DOMAIN,www.icloud.com,PROXY
