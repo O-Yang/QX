@@ -14,7 +14,7 @@ DOMAIN,xp.apple.com,REJECT
 DOMAIN,gdmf.apple.com,REJECT
 
 
-DOMAIN,ocsp.int-x3.letsencrypt.org
+#DOMAIN,ocsp.int-x3.letsencrypt.org
 DOMAIN,ocsp.apple.com
 DOMAIN,world-gen.g.aaplimg.com
 DOMAIN,mesu.apple.com
