@@ -51,7 +51,7 @@ static= 🇸🇬 其　他, server-tag-regex=^((?!(香港|港|澳门|澳|台湾|
 
 
 [filter_remote]
-https://raw.githubusercontent.com/O-Yang/Quantumult-X/main/list/A/BlockiOSUpdate.list?token=GHSAT0AAAAAABUZ7Y7M4DSW72ZBD37KEC54YUNW2JQ, tag=屏蔽⚙️(系统更新), force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/O-Yang/jsbox/main/Xios_update.list, tag=屏蔽⚙️(系统更新), force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list, tag=规则修正, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, tag=神机广告拦截, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list#type=domain-set, tag=广告拦截, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
@@ -93,7 +93,7 @@ https://raw.githubusercontent.com/Orz-3/QuantumultX/master/Netflix_ratings.conf,
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机重定向, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/app2smile/rules/master/module/bilibili-qx.conf, tag=Bilibili去广告, update-interval=172800, opt-parser=false, enabled=false
 https://raw.githubusercontent.com/app2smile/rules/master/module/tieba-qx.conf, tag=贴吧去广告, update-interval=172800, opt-parser=false, enabled=false
-https://raw.githubusercontent.com/O-Yang/Quantumult-X/main/Advertising.conf?token=GHSAT0AAAAAABUZ7Y7MWNNLMCXYWEDUIA6QYUNW3PQ, tag=神机去广告（排除电视家）, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/O-Yang/jsbox/main/Advertising.conf, tag=神机去广告（排除电视家）, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=lhie1去广告, update-interval=172800, opt-parser=false, enabled=false
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/AdvertisingPlus.conf, tag=去广告脚本, update-interval=172800, opt-parser=false, enabled=true
 
