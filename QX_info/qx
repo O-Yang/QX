@@ -1,0 +1,133 @@
+[server_remote]
+https://sub.paasmi.com/subscribe/109237/Egoxe0WfdjLy?mode=3, tag=ByWave（150G）, update-interval=172800, opt-parser=true, enabled=true, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+
+# 2022/5/25更新 版本1.0（增加本地重写，🔓TATA付费房。点此下载APP (https://www.tata9.live/?code=U6863621)）
+# Quantumult X小白配置 制作 by Orz-3 TG频道：t.me/Orzmini 2022/05/10
+# 就那么回事吧！
+
+[general]
+server_check_url=http://cp.cloudflare.com/generate_204
+dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/Orz-3/Orz-3/master/QuantumultX/IP.js
+resource_parser_url=https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/resource-parser.js
+excluded_routes=239.255.255.250/32
+udp_whitelist=1-442, 444-65535
+
+[dns]
+no-ipv6
+server=119.29.29.29
+address=/mtalk.google.com/108.177.125.188
+server=/dl.google.com/119.29.29.29
+server=/dl.l.google.com/119.29.29.29
+server=/update.googleapis.com/119.29.29.29
+server=/*.dl.playstation.net/119.29.29.29
+server=/amplifi.lan/system
+server=/router.synology.com/system
+server=/sila.razer.com/system
+server=/router.asus.com/system
+server=/routerlogin.net/system
+server=/orbilogin.com/system
+server=/www.LinksysSmartWiFi.com/system
+server=/LinksysSmartWiFi.com/system
+server=/myrouter.local/system
+server=/www.miwifi.com/system
+server=/miwifi.com/system
+server=/mediarouter.home/system
+server=/tplogin.cn/system
+server=/tplinklogin.net/system
+server=/melogin.cn/system
+server=/falogin.cn/system
+
+[policy]
+static=🌏 全球加速, direct,  🇭🇰 港澳台, 🇰🇷 日　韩,  🇺🇸 欧　美,  🇸🇬 其　他, 🏳‍🌈 最快节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+static=🌀 Twitter, direct,  🇭🇰 港澳台, 🇰🇷 日　韩,  🇺🇸 欧　美,  🇸🇬 其　他, 🏳‍🌈 最快节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Twitter.png
+static=🍏苹果服务, direct,  🇭🇰 港澳台, 🇰🇷 日　韩,  🇺🇸 欧　美,  🇸🇬 其　他, 🏳‍🌈 最快节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
+static=📗 漏网清单, direct,  🇭🇰 港澳台, 🇰🇷 日　韩,  🇺🇸 欧　美,  🇸🇬 其　他, 🏳‍🌈 最快节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png
+url-latency-benchmark=🏳‍🌈 最快节点, server-tag-regex=.*, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+static= 🇭🇰 港澳台, server-tag-regex=(?=.*(香港|港|澳门|澳|台湾|台|HK|MC|TW|(?i)Hong|Macao|Taiwan))^((?!(日|韩|美|英|俄)).)*$, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+static= 🇰🇷 日　韩, server-tag-regex=(?=.*(日本|韩国|韓國|JP|KR(?i)Japan|Korea))^((?!(港|澳|台|美|英|俄)).)*$, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
+static= 🇺🇸 欧　美, server-tag-regex=(?=.*(美国|英国|美國|英國|美|英|俄罗斯|白俄罗斯|US|UK|RU|(?i)States|American|Britain|Russia|Russ))^((?!(港|澳|台|日|韩)).)*$, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+static= 🇸🇬 其　他, server-tag-regex=^((?!(香港|港|澳门|澳|台湾|台|HK|MC|TW|美国|美國|美|英国|英國|英|俄罗斯|白俄罗斯|US|RU|UK|日本|韩国|韓國|JP|KR|(?i)Hong|Macao|Taiwan|States|American|Russia|Russ|Japan|Korea)).)*$, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+
+
+[filter_remote]
+https://raw.githubusercontent.com/O-Yang/jsbox/main/Xios_update.list, tag=屏蔽⚙️(系统更新), force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list, tag=规则修正, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, tag=神机广告拦截, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list#type=domain-set, tag=广告拦截, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRule.list, tag=野比广告拦截, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/app2smile/rules/master/rule/tieba-ad-qx.list, tag=贴吧广告, force-policy=reject, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list, tag=运营劫持, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list, tag=隐私保护, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Twitter/Twitter.list, tag=Twitter(美日节点), force-policy=🌀 Twitter, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/StreamingSE.list, tag=港台番剧, force-policy= 🇭🇰 港澳台, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/TikTok.list, tag=海外抖音, force-policy=🌏 全球加速, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list, tag=国际媒体, force-policy=🌏 全球加速, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list, tag=全球加速, force-policy=🌏 全球加速, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list, tag=苹果服务, force-policy=🍏苹果服务, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list, tag=国内网站, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+
+[filter_local]
+host-suffix, local, direct
+ip-cidr, 192.168.0.0/16, direct
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 100.64.0.0/10, direct
+ip-cidr, 224.0.0.0/4, direct
+ip6-cidr, fe80::/10, direct
+ip-cidr, 203.107.1.1/24, reject
+ip-cidr, 183.240.197.130/32, direct
+final, 📗 漏网清单
+
+[rewrite_remote]
+
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/Bili_Auto_Regions.conf, tag=Bilibili换区脚本, update-interval=172800, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JD_TB_price.conf, tag=比价脚本, update-interval=172800, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/TestFlightDownload.conf , tag=TestFlight区域限制解除, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/TikTok.conf, tag=Tiktok解锁, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult%20X/TikTok-TW.conf, tag=TK台湾区, update-interval=86400, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult%20X/TikTok-KR.conf, tag=TK韩国区, update-interval=86400, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult%20X/TikTok-US.conf, tag=TK美国区, update-interval=86400, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/Netflix_ratings.conf, tag=Netflix评分, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机重定向, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/app2smile/rules/master/module/bilibili-qx.conf, tag=Bilibili去广告, update-interval=172800, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/app2smile/rules/master/module/tieba-qx.conf, tag=贴吧去广告, update-interval=172800, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/O-Yang/jsbox/main/Advertising.conf, tag=神机去广告（排除电视家）, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=lhie1去广告, update-interval=172800, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/AdvertisingPlus.conf, tag=去广告脚本, update-interval=172800, opt-parser=false, enabled=true
+
+
+
+[rewrite_local]
+#🔓TATA付费房解锁
+^http:\/\/j9700\.xinxindaka\.com\/api\/public\/\?service=Live\.checkLive url script-response-body https://raw.githubusercontent.com/reapple/quantumult_js/main/tata.js
+# > 91视频解锁会员
+^https?:\/\/ap\w{1,4}\.(weilaixushi|orientlion|qdjdswkj|0954auto|xmblgg)\.com\/m_user\/info url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/91SPCrack.js
+^https?:\/\/.*\/m_sns\/(film|video|short_video)\/(film_detail|detail_list|apply_play) url request-header (\r\n)X-AUTH-TOKEN:.+(\r\n) request-header $1X-AUTH-TOKEN: eyJhbGciOiJIUzUxMiIsImlhdCI6MTY0NTI4NDUxOSwiZXhwIjoxNjYwODM2NTE5fQ.eyJpZCI6NDg1NTM2fQ.XuVjZoS-WMwlOFWOPOOhfkJb9v7BRj5x6IUSagdbbEK96pVws6kpvEG4QK9BErNmTf1guoBXLPbU_h9vxVIQRA$2
+^https?:\/\/.*\/(common\/splash_config|m_user\/(check_phone|behavior_verification_code)) url reject-200
+
+[mitm]
+passphrase = 655A5FC6
+p12 = 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
+skip_validating_cert = true
+# > 91视频解锁会员
+hostname = app.weilaixushi.com, api.orientlion.com, app.qdjdswkj.com, api.0954auto.com, appapi.xmblgg.com
+
+*******************************/
+
+var body = $response.body;
+body = "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";
+$done({
+    body
+});
+
+
+[http_backend]
+https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, host=boxjs.com, tag=BoxJS, path=^/, enabled=true
+
+[task_local]
+event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体解锁查询, img-url=arrowtriangle.right.square.system, enabled=true
+
+[server_local]
+
