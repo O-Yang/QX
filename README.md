@@ -1,6 +1,6 @@
 感谢规则、脚本等提供(不分先后)：
 
-[Erdongchen](https://github.com/erdongchanyo/Rules)、
+[E超衔接n](https://github.com/erdongchanyo/Rules)、
 
 # QX
 QuantumultX
