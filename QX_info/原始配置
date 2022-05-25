@@ -73,7 +73,7 @@ static= 🇸🇬 其　他, server-tag-regex=^((?!(香港|港|澳门|澳|台湾|
 ##------------------------------------##
 
 [server_remote]
-https://sub.paasmi.com/subscribe/109237/Egoxe0WfdjLy?mode=3, tag=ByWave（150G）, update-interval=172800, opt-parser=true, enabled=true, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+
 # 1.节点 服务器远程地址。
 # 屏蔽订阅里无用信息，在订阅的后面添加#out=示例+示例+（字段中的某个字也可以）。比如#out=公告+通知+邀请
 
