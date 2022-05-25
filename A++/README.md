@@ -1,1 +1,4 @@
-qw
+Quantumult-X 配置
+
+
+
