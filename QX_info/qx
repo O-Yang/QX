@@ -1,0 +1,208 @@
+[server_remote]
+https://sub.paasmi.com/subscribe/109237/Egoxe0WfdjLy?mode=3, tag=ByWave（150G）, update-interval=172800, opt-parser=true, enabled=true, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+
+##↑↑↑↑↑↑↑↑↑节点 服务器远程地址↑↑↑↑↑↑↑↑↑↑↑##
+# 屏蔽订阅里无用信息，在订阅的后面添加#out=示例+示例+（字段中的某个字也可以）。比如#out=公告+通知+邀请
+# “#”为注释符号，删除#号该行才会生效。
+# 2022/5/22更新 版本1.0.19（增加本地重写，🔓TATA付费房。点此下载APP (https://www.tata9.live/?code=U6863621)）
+#（安装了YouTube、 插件，所以这些规则不需要了，屏蔽掉，但不删除。）
+# 就那么回事吧！
+
+
+
+
+[general]
+# “server_check_url=http://bing.com/” Quantumult X 会对指定的网址进行相应测试，以确认节点的可用性。
+
+server_check_url=http://cp.cloudflare.com/generate_204
+
+
+# list中的域名将不使用fake-ip方式, 多个域名用“, ”连接。其它域名则全部采用 fake-ip及远程解析的模式。
+dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com
+
+# 用于节点页面的信息展示，可完整自定义。
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/Orz-3/Orz-3/master/QuantumultX/IP.js
+
+# 给 Quantumult X 添加：资源解析器。
+resource_parser_url=https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/resource-parser.js
+
+# 下列表中内容将不经过 QuantumultX 的处理。
+excluded_routes=239.255.255.250/32, 24.105.30.129/32, 185.60.112.157/32, 185.60.112.158/32, 182.162.132.1/32
+
+# 第一个filter为4g模式开启规则分流，第二个filter为其他wifi下开启规则分流，第三个wifi1修改成你路由器翻墙的wifi名开启直连模式，第四个wifi2为你需要全局代理的wifi名（这个一般不需要随便写就行）。
+# 默认关闭根据wifi切换模式，如需开启，删除下方的“#”即可！
+#running_mode_trigger=filter, filter, wifi1:all_direct, wifi2: all_proxy
+#不知道是啥
+fallback_udp_policy=direct
+
+##------------------------------------##
+
+[dns]
+# 指定的 dns 服务器。
+no-ipv6
+server=119.29.29.29
+address=/mtalk.google.com/108.177.125.188
+server=/dl.google.com/119.29.29.29
+server=/dl.l.google.com/119.29.29.29
+server=/tplogin.cn/system
+server=/tplinklogin.net/system
+server=/melogin.cn/system
+server=/falogin.cn/system
+
+# 制定域名解析 dns。
+
+##------------------------------------##
+
+
+[policy]
+# 策略组,将分流规则传递过来的网络请求进行分发,服务器按地区分组策略。direct=直接连接, proxy=代理连接。reject=拒绝连接
+# 引用的Emoji符号：https://www.emojiall.com/zh-hans/categories/J
+static=🌏 全球加速, direct,  🇭🇰 港澳台, 🇰🇷 日　韩,  🇺🇸 欧　美,  🇸🇬 其　他, 🏳‍🌈 最快节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+static=🌀 Twitter, direct,  🇭🇰 港澳台, 🇰🇷 日　韩,  🇺🇸 欧　美,  🇸🇬 其　他, 🏳‍🌈 最快节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Twitter.png
+static=🍏苹果服务, direct,  🇭🇰 港澳台, 🇰🇷 日　韩,  🇺🇸 欧　美,  🇸🇬 其　他, 🏳‍🌈 最快节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
+static=📗 漏网清单, direct,  🇭🇰 港澳台, 🇰🇷 日　韩,  🇺🇸 欧　美,  🇸🇬 其　他, 🏳‍🌈 最快节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png
+
+# 自动选择最优节点，默认设置600秒=10分钟测速一次，当前使用节点延迟和最新测速延迟最低的节点相差100ms以上则切换为最新的最低延迟节点，否则继续延用节点。
+url-latency-benchmark=🏳‍🌈 最快节点, server-tag-regex=.*, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+
+#手动选择节点
+static= 🇭🇰 港澳台, server-tag-regex=(?=.*(香港|港|澳门|澳|台湾|台|HK|MC|TW|(?i)Hong|Macao|Taiwan))^((?!(日|韩|美|英|俄)).)*$, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+static= 🇰🇷 日　韩, server-tag-regex=(?=.*(日本|韩国|韓國|JP|KR(?i)Japan|Korea))^((?!(港|澳|台|美|英|俄)).)*$, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
+static= 🇺🇸 欧　美, server-tag-regex=(?=.*(美国|英国|美國|英國|美|英|俄罗斯|白俄罗斯|US|UK|RU|(?i)States|American|Britain|Russia|Russ))^((?!(港|澳|台|日|韩)).)*$, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+static= 🇸🇬 其　他, server-tag-regex=^((?!(香港|港|澳门|澳|台湾|台|HK|MC|TW|美国|美國|美|英国|英國|英|俄罗斯|白俄罗斯|US|RU|UK|日本|韩国|韓國|JP|KR|(?i)Hong|Macao|Taiwan|States|American|Russia|Russ|Japan|Korea)).)*$, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+
+##留存
+#static=🎧 网易音乐, 🏳‍🌈 最快节点, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music.png
+#url-latency-benchmark=香港, server-tag-regex=(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+#url-latency-benchmark=台湾, server-tag-regex=(?=.*(台|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+#url-latency-benchmark=日本, server-tag-regex=(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+#url-latency-benchmark=新加坡, server-tag-regex=(?=.*(新|狮|獅|SG|(?i)Singapore))^((?!(港|台|日|韩|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+#url-latency-benchmark=美国, server-tag-regex=(?=.*(美|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+
+##------------------------------------##
+
+[filter_remote]
+# 2.远程分流规则订阅，将网络请求进行分流，网络请求的走向(是否能成功访问)由匹配到的策略组决定，部分规则有先后顺序要求，调整顺序可能失效。注意：(对于完全相同的某条规则，本地的将优先生效)。
+
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list, tag=规则修正, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, tag=神机广告拦截, force-policy=reject, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRule.list, tag=野比广告拦截, force-policy=reject, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list, tag=运营劫持, force-policy=reject, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list, tag=隐私保护, force-policy=reject, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/O-Yang/QX/main/list/A/BlockiOSUpdate.list, tag=屏蔽⚙️(系统更新), force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
+#https://raw.githubusercontent.com/O-Yang/QX/main/list/A/YiZhiBo.list, tag=易直播, force-policy=🌏 全球加速, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Twitter/Twitter.list, tag=Twitter(美日节点), force-policy=🌀 Twitter, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/StreamingSE.list, tag=港台番剧, force-policy= 🇭🇰 港澳台, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/TikTok.list, tag=海外抖音, force-policy=🌏 全球加速, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list, tag=国际媒体, force-policy=🌏 全球加速, update-interval=86400, opt-parser=true, enabled=true
+
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list, tag=全球加速, force-policy=🌏 全球加速, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/AppStore.list, tag=苹果服务, force-policy=🍏苹果服务, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/AppStoreConnect.list, tag=苹果服务, force-policy=🍏苹果服务, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/TestFlight.list, tag=Testflight, force-policy=🍏苹果服务, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list, tag=国内网站, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
+https://cdn.jsdelivr.net/gh/17mon/china_ip_list@master/china_ip_list.txt#type=rule, tag=ChinaIPv4, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
+https://gaoyifan.github.io/china-operator-ip/chinanet6.txt#type=rule, tag=ChinaIPv6, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
+
+##------------------------------------##
+
+[filter_local]
+# 2.本地分流规则(对于完全相同的某条规则，本地的将优先生效)。
+host-suffix, local, direct
+ip-cidr, 192.168.0.0/16, direct
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 100.64.0.0/10, direct
+ip-cidr, 224.0.0.0/4, direct
+ip6-cidr, fe80::/10, direct
+
+ip-cidr, 203.107.1.1/24, reject
+
+# 绕过企业证书过期
+#host, ocsp.apple.com, reject
+
+# 已采用 ip 池数据，因此注释掉 geoip cn
+#geoip, cn, direct
+
+#不在上述规则中(远程以及本地)的剩余请求，将走final 指定的节点/策略，这里即是 → 📗 漏网清单, 请根据自己的需求来选择直连或节点、策略。
+final, 📗 漏网清单
+
+
+##------------------------------------##
+
+[rewrite_remote]
+# 3.远程重写订阅，包含主机名 hostname 以及复写 rewrite 规则，update-interval 为更新时间参数，单位：秒, 默认更新时间为：24*60*60=86400 秒，也就是24小时。opt-parser=true/false 用于控制是否对订阅开启资源解析器，不写或者 false 表示不启用解析器。
+
+
+#https://raw.githubusercontent.com/Orz-3/QuantumultX/master/Bili_Auto_Regions.conf, tag=Bilibili换区脚本, update-interval=86400, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JD_TB_price.conf, tag=京东淘宝比价, update-interval=86400, opt-parser=false, enabled=true
+
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/TestFlightDownload.conf, tag=TestFlight区域限制解除, update-interval=86400, opt-parser=false, enabled=true
+
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/TikTok.conf, tag=Tiktok解锁, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult%20X/TikTok-TW.conf, tag=TK台湾区, update-interval=86400, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult%20X/TikTok-KR.conf, tag=TK韩国区, update-interval=86400, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult%20X/TikTok-US.conf, tag=TK美国区, update-interval=86400, opt-parser=false, enabled=false
+
+
+https://raw.githubusercontent.com/app2smile/rules/master/module/bilibili-qx.conf, tag=Bilibili去广告, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/app2smile/rules/master/module/tieba-qx.conf, tag=贴吧去广告, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/O-Yang/QX/main/Advertising.conf, tag=神机去广告（电视家）, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=lhie1去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机重定向, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/AdvertisingPlus.conf, tag=去广告脚本, update-interval=172800, opt-parser=false, enabled=true
+
+
+##------------------------------------##
+
+[rewrite_local]
+# 3.本地重写订阅，需要手动添加 [mitm] 下的 hostname= 参数。
+
+^http:\/\/j9700\.xinxindaka\.com\/api\/public\/\?service=Live\.checkLive url script-response-body https://raw.githubusercontent.com/reapple/quantumult_js/main/tata.js
+
+##------------------------------------##
+
+[mitm]
+passphrase = 655A5FC6
+p12 = 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
+# 4.MitM 证书!开启 mitm，需要自行在Quantumult X中生成证书、安装、信任。
+
+# HOSTNAME 本地重写订阅需要手动添加 hostname= 参数。
+hostname = *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com
+
+
+##不知道是啥，没查出来。
+skip_validating_cert = true
+
+##------------------------------------##
+
+[http_backend]
+
+#不知道是什么，暂时不清楚。
+https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, host=boxjs.com, tag=BoxJS, path=^/, enabled=true
+
+##------------------------------------##
+
+[task_local]
+# 5.调试，构造请求。
+# 定时脚本，任务模块，可用于签到,天气话费查询等。js文件放于iCloud或者本机的Quantumult X/Scripts 路径下。TF版本可直接使用远程js链接。
+####
+#2 12 * * * sample.js, tag=本地示范(左滑编辑，右滑执行), img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/quantumult-x.png
+#13 12 * * * https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-task.js, tag=远程示范(点击缓存/更新脚本), img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/quantumult-x.png
+####
+##具体解释：👇🏻
+#从 “分” 开始的5位cron 写法，具体 cron 表达式可自行 Google。
+#比如上述语句 代表每天 12 点 2 分，自动执行一次。
+#tag参数为 task 命名标识。
+#img-url参数用于指定 task 的图标(108*108)。
+
+
+
+##------------------------------------##
+
+[server_local]
+# 1.节点 服务器本地地址。
+
+
+##------------------------------------##
