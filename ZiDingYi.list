@@ -1,11 +1,10 @@
 # > 自定义
+#域后缀,网址
 
 DOMAIN-SUFFIX,beeg.com
 DOMAIN-SUFFIX,ios-repo-updates.com
 DOMAIN-SUFFIX,pullws.paycdk.com
 
-# > Dianshijia
-# ^https?:\/\/api\.gaoqingdianshi\.com\/api\/v\d\/ad\/ url reject
-# ^https?:\/\/cdn\.dianshihome\.com\/static\/ad\/ url reject
+
 
 
